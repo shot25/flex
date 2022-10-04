@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Свойства flex-контейнера</h2>
+    <div class="first">
+      <div class="flex1">
+        <div class="one">
+          <p>1</p>
+        </div>
+        <div class="first-text">
+          <div class="text-first1">display: flex;</div>
+          <div class="text-first2">display: -webkit-flex;</div>
+          <br />
+          <div class="text-first3">
+            Назначение запуск механизма Flexbox Возможные значения:
+            flex/inline-flex
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="first-main1">
+          <div class="first-box1">
+            <div class="first-block1"></div>
+            <div class="first-block1"></div>
+            <div class="first-block1"></div>
+          </div>
+          <p>flex</p>
+        </div>
+
+        <div class="first-main2">
+          <div class="first-box2">
+            <div class="first-block2"></div>
+            <div class="first-block2"></div>
+            <div class="first-block2"></div>
+          </div>
+          <p>inline-flex</p>
+        </div>
+      </div>
+    </div>
+    <div class="second">
+      <div class="flex2">
+        <div class="two">
+          <p>2</p>
+        </div>
+        <div class="second-text">
+          <div class="second-text1">
+            <p>flex-direction:row;</p>
+          </div>
+          <div class="second-text2">
+            <p>-webkit-flex-direction:row;</p>
+          </div>
+          <div class="second-text3">
+            <p>
+              Назначение:направление укладки элементов по осям Возможные
+              значения:row/row-reverse/column/column-reverse
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="second-cards1">
+          <div class="second-main1">
+            <div class="second-box1">
+              <div class="second-block1"></div>
+              <div class="second-block1"></div>
+              <div class="second-block1"></div>
+            </div>
+            <p>row</p>
+          </div>
+          <div class="second-main2">
+            <div class="second-box2">
+              <div class="second-block2"></div>
+              <div class="second-block2"></div>
+              <div class="second-block2"></div>
+            </div>
+            <p>row-reverse</p>
+          </div>
+        </div>
+        <div class="second-cards2">
+          <div class="second-main3">
+            <div class="second-box3">
+              <div class="second-block3"></div>
+              <div class="second-block3"></div>
+              <div class="second-block3"></div>
+            </div>
+            <p>column</p>
+          </div>
+          <div class="second-main4">
+            <div class="second-box4">
+              <div class="second-block4"></div>
+              <div class="second-block4"></div>
+              <div class="second-block4"></div>
+            </div>
+            <p>column-reverse</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="third">
+      <div class="flex3">
+        <div class="three">
+          <p>3</p>
+        </div>
+        <div class="third-text">
+          <div class="third-text1">
+            <p>flex-wrap: nowrap;</p>
+          </div>
+          <div class="third-text2">
+            <p>-webkit-flex-wrap: nowrap;</p>
+          </div>
+          <div class="third-text3">
+            <p>
+              Назначение:расположение элементов в одну или несколько строк
+              Возможные значение: nowrap/wrap/wrap-reverse
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="third-cards1">
+          <div class="third-main1">
+            <div class="third-box1">
+              <div class="third-block1"></div>
+              <div class="third-block1"></div>
+              <div class="third-block1"></div>
+              <div class="third-block1"></div>
+              <div class="third-block1"></div>
+              <div class="third-block1"></div>
+            </div>
+            <p>nowrap</p>
+          </div>
+          <div class="third-main2">
+            <div class="third-box2">
+              <div class="third-block2"></div>
+              <div class="third-block2"></div>
+              <div class="third-block2"></div>
+              <div class="third-block2"></div>
+              <div class="third-block2"></div>
+              <div class="third-block2"></div>
+              <div class="third-block2"></div>
+              <div class="third-block2"></div>
+              <div class="third-block2"></div>
+            </div>
+            <p>wrap</p>
+          </div>
+        </div>
+        <div class="third-cards2">
+          <div class="third-main3">
+            <div class="third-box3">
+              <div class="third-block3"></div>
+              <div class="third-block3"></div>
+              <div class="third-block3"></div>
+              <div class="third-block3"></div>
+              <div class="third-block3"></div>
+              <div class="third-block3"></div>
+              <div class="third-block3"></div>
+              <div class="third-block3"></div>
+              <div class="third-block3"></div>
+            </div>
+            <p>wrap-reverse</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fourth">
+      <div class="flex4">
+        <div class="four">
+          <p>4</p>
+        </div>
+        <div class="fourth-text">
+          <div class="fourth-text1"><p>flex-flow:row nowrap;</p></div>
+          <div class="fourth-text2">
+            <p>-webkit-flex-flow:row nowrap:</p>
+          </div>
+          <div class="fourth-text3">
+            <p>
+              Назначение: сокрашённая запись для свойств flex-direction и
+              flex-wrap. Возможные значения:см. свойство 2 и 3
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fifth">
+      <div class="flex5">
+        <div class="five">
+          <p>5</p>
+        </div>
+        <div class="fifth-text">
+          <div class="fifth-text1">
+            <p>justify-content: flex-start</p>
+          </div>
+          <div class="fifth-text2">
+            <p>-webkit-justify-content: flex-start:</p>
+          </div>
+          <div class="fifth-text3">
+            <p>
+              Назначение: выравнивание flex-элементов по главной оси текущей
+              строки Возможные значения:
+              flex-start/flex-end/center/space-between/space-around
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container5">
+        <div class="fifth-cards1">
+          <div class="fifth-main1">
+            <div class="fifth-box1">
+              <div class="fifth-block1"></div>
+              <div class="fifth-block1"></div>
+              <div class="fifth-block1"></div>
+            </div>
+            <p>flex-start</p>
+          </div>
+          <div class="fifth-main2">
+            <div class="fifth-box2">
+              <div class="fifth-block2"></div>
+              <div class="fifth-block2"></div>
+              <div class="fifth-block2"></div>
+            </div>
+            <p>flex-end</p>
+          </div>
+        </div>
+        <div class="fifth-cards2">
+          <div class="fifth-main3">
+            <div class="fifth-box3">
+              <div class="fifth-block3"></div>
+              <div class="fifth-block3"></div>
+              <div class="fifth-block3"></div>
+            </div>
+            <p>center</p>
+          </div>
+          <div class="fifth-main4">
+            <div class="fifth-box4">
+              <div class="fifth-block4"></div>
+              <div class="fifth-block4"></div>
+              <div class="fifth-block4"></div>
+              <div class="fifth-block4"></div>
+              <div class="fifth-block4"></div>
+            </div>
+            <p>space-between</p>
+          </div>
+        </div>
+        <div class="fifth-cards3">
+          <div class="fifth-main5">
+            <div class="fifth-box5">
+              <div class="fifth-block5"></div>
+              <div class="fifth-block5"></div>
+              <div class="fifth-block5"></div>
+              <div class="fifth-block5"></div>
+              <div class="fifth-block5"></div>
+            </div>
+            <p>space-around</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sixth">
+      <div class="flex6">
+        <div class="six">
+          <p>6</p>
+        </div>
+        <div class="sixth-text">
+          <div class="sixth-text1">
+            <p>align-items: strech;</p>
+          </div>
+          <div class="sixth-text2">
+            <p>-webkit-align-items: stretch:</p>
+          </div>
+          <div class="sixth-text3">
+            <p>
+              Назначение: выравнивание flex-элементов вдоль поперочной оси
+              Возможные значения: strech/flex-start/flex-end/center/baseline
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container6">
+        <div class="sixth-cards1">
+          <div class="sixth-main1">
+            <div class="sixth-box1">
+              <div class="sixth-block1"></div>
+              <div class="sixth-block1"></div>
+              <div class="sixth-block1"></div>
+            </div>
+            <p>stretch</p>
+          </div>
+          <div class="sixth-main2">
+            <div class="sixth-box2">
+              <div class="sixth-block2"></div>
+              <div class="sixth-block2"></div>
+              <div class="sixth-block2"></div>
+            </div>
+            <p>flex-start</p>
+          </div>
+        </div>
+        <div class="sixth-cards2">
+          <div div class="sixth-main3">
+            <div class="sixth-box3">
+              <div class="sixth-block3"></div>
+              <div class="sixth-block3"></div>
+              <div class="sixth-block3"></div>
+            </div>
+            <p>flex-end</p>
+          </div>
+          <div div class="sixth-main4">
+            <div class="sixth-box4">
+              <div class="sixth-block4"></div>
+              <div class="sixth-block4"></div>
+              <div class="sixth-block4"></div>
+            </div>
+            <p>center</p>
+          </div>
+        </div>
+        <div class="sixth-cards3">
+          <div class="sixth-main5">
+            <div class="sixth-box5">
+              <div class="sixth-block5"></div>
+              <div class="sixth-block6"></div>
+              <div class="sixth-block7"></div>
+              <div class="sixth-block8"></div>
+            </div>
+            <p>baseline</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seventh">
+      <div class="flex7">
+        <div class="seven">
+          <p>7</p>
+        </div>
+        <div class="seventh-text">
+          <div class="seventh-text1">
+            <p>align-content: stretch;</p>
+          </div>
+          <div class="seventh-text2">
+            <p>-webkit-align-content:stretch:</p>
+          </div>
+          <div class="seventh-text3">
+            <p>
+              Назначение: выравнивание строк flex-элементов вдоль поперечной оси
+              Возможные значения:
+              stretch/flex-start/flex-end/center/space-between/space-around
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container7">
+        <div class="seventh-cards1">
+          <div class="seventh-main1">
+            <div class="seventh-box1">
+              <div class="seventh-table1">
+                <div class="seventh-block1"></div>
+                <div class="seventh-block1"></div>
+                <div class="seventh-block1"></div>
+              </div>
+              <div class="seventh-table2">
+                <div class="seventh-block1"></div>
+                <div class="seventh-block1"></div>
+                <div class="seventh-block1"></div>
+              </div>
+              <div class="seventh-table3">
+                <div class="seventh-block1"></div>
+                <div class="seventh-block1"></div>
+                <div class="seventh-block1"></div>
+              </div>
+            </div>
+            <p>stretch</p>
+          </div>
+          <div class="seventh-main2">
+            <div class="seventh-box2">
+              <div class="seventh-table4">
+                <div class="seventh-block2"></div>
+                <div class="seventh-block2"></div>
+              </div>
+              <div class="seventh-table5">
+                <div class="seventh-block2"></div>
+                <div class="seventh-block2"></div>
+              </div>
+              <div class="seventh-table6">
+                <div class="seventh-block2"></div>
+                <div class="seventh-block2"></div>
+              </div>
+              <div class="seventh-table7">
+                <div class="seventh-block2"></div>
+                <div class="seventh-block2"></div>
+              </div>
+              <div class="seventh-table8">
+                <div class="seventh-block2"></div>
+              </div>
+              <div class="seventh-table9">
+                <div class="seventh-block2"></div>
+              </div>
+            </div>
+            <p>flex-start</p>
+          </div>
+        </div>
+        <div class="seventh-cards2">
+          <div class="seventh-main3">
+            <div class="seventh-box3">
+              <div class="seventh-table10">
+                <div class="seventh-block3"></div>
+                <div class="seventh-block3"></div>
+              </div>
+              <div class="seventh-table11">
+                <div class="seventh-block3"></div>
+                <div class="seventh-block3"></div>
+              </div>
+              <div class="seventh-table12">
+                <div class="seventh-block3"></div>
+                <div class="seventh-block3"></div>
+              </div>
+              <div class="seventh-table13">
+                <div class="seventh-block3"></div>
+                <div class="seventh-block3"></div>
+              </div>
+              <div class="seventh-table14">
+                <div class="seventh-block3"></div>
+              </div>
+              <div class="seventh-table15">
+                <div class="seventh-block3"></div>
+              </div>
+            </div>
+            <p>flex-end</p>
+          </div>
+          <div class="seventh-main4">
+            <div class="seventh-box4">
+              <div class="seventh-table16">
+                <div class="seventh-block4"></div>
+                <div class="seventh-block4"></div>
+              </div>
+              <div class="seventh-table17">
+                <div class="seventh-block4"></div>
+                <div class="seventh-block4"></div>
+              </div>
+              <div class="seventh-table18">
+                <div class="seventh-block4"></div>
+                <div class="seventh-block4"></div>
+              </div>
+              <div class="seventh-table19">
+                <div class="seventh-block4"></div>
+                <div class="seventh-block4"></div>
+              </div>
+              <div class="seventh-table20">
+                <div class="seventh-block4"></div>
+              </div>
+              <div class="seventh-table21">
+                <div class="seventh-block4"></div>
+              </div>
+            </div>
+            <p>center</p>
+          </div>
+        </div>
+        <div class="seventh-cards3">
+          <div class="seventh-main5">
+            <div class="seventh-box5">
+              <div class="sevent-table22">
+                <div class="seventh-block5"></div>
+                <div class="seventh-block5"></div>
+                <div class="seventh-block5"></div>
+              </div>
+              <div class="sevent-table23">
+                <div class="seventh-block5"></div>
+                <div class="seventh-block5"></div>
+                <div class="seventh-block5"></div>
+              </div>
+              <div class="sevent-table24">
+                <div class="seventh-block5"></div>
+                <div class="seventh-block5"></div>
+                <div class="seventh-block5"></div>
+              </div>
+              <div class="sevent-table25">
+                <div class="seventh-block5"></div>
+                <div class="seventh-block5"></div>
+              </div>
+              <div class="sevent-table26">
+                <div class="seventh-block5"></div>
+                <div class="seventh-block5"></div>
+              </div>
+            </div>
+            <p>space-between</p>
+          </div>
+          <div class="seventh-main6">
+            <div class="seventh-box6">
+              <div class="sevent-table27">
+                <div class="seventh-block6"></div>
+                <div class="seventh-block6"></div>
+                <div class="seventh-block6"></div>
+              </div>
+              <div class="sevent-table28">
+                <div class="seventh-block6"></div>
+                <div class="seventh-block6"></div>
+                <div class="seventh-block6"></div>
+              </div>
+              <div class="sevent-table29">
+                <div class="seventh-block6"></div>
+                <div class="seventh-block6"></div>
+                <div class="seventh-block6"></div>
+              </div>
+              <div class="sevent-table30">
+                <div class="seventh-block6"></div>
+                <div class="seventh-block6"></div>
+              </div>
+              <div class="sevent-table31">
+                <div class="seventh-block6"></div>
+                <div class="seventh-block6"></div>
+              </div>
+            </div>
+            <p>space-around</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h2">
+      <h2>Свойства flex-элемента</h2>
+    </div>
+    <div class="eleventh">
+      <div class="flex11">
+        <div class="eleven">
+          <p>1</p>
+        </div>
+
+        <div class="eleventh-text">
+          <div class="eleventh-text1">
+            <p>order: 0;</p>
+          </div>
+          <div class="eleventh-text2"><p>-webkit-order: 0;</p></div>
+          <div class="eleventh-text3">
+            <p>
+              Назначение: определение порядка расстановки flex-элементов
+              Возможные значения: (целое число)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container11">
+        <div class="eleventh-main1">
+          <div class="eleventh-item">
+            <div class="eleventh-warn">
+              <p>order:0</p>
+            </div>
+            <div class="eleventh-warn2">
+              <p>order:1</p>
+            </div>
+          </div>
+          <div class="eleventh-box1">
+            <div class="eleventh-block11">1</div>
+            <div class="eleventh-block12">2</div>
+            <div class="eleventh-block13">3</div>
+            <div class="eleventh-block14">4</div>
+            <div class="eleventh-block15">5</div>
+          </div>
+          <div class="eleventh-item2">
+            <div class="eleventh-warn3">
+              <p>order:-1</p>
+            </div>
+            <div class="eleventh-warn4">
+              <p>order:0</p>
+            </div>
+            <div class="eleventh-warn5">
+              <p>order:2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="twelfth">
+      <div class="flex12">
+        <div class="twelve">
+          <p>2</p>
+        </div>
+        <div class="twelfth-text">
+          <div class="twelfth-text1">
+            <p>flex-grow: 0;</p>
+          </div>
+          <div class="twelfth-text2"><p>-webkit-flex-grow: 0;</p></div>
+          <div class="twelfth-text3">
+            <p>
+              Назначение: указывает вактор растягивания flex-элемента Возможные
+              значения: (целое неотрицательное число)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container12">
+        <div class="twelfth-main1">
+          <div class="twelfth-box1">
+            <div class="twelfth-block1">1</div>
+            <div class="twelfth-block1">2</div>
+            <div class="twelfth-block1">3</div>
+            <div class="twelfth-block1">4</div>
+            <div class="twelfth-block1">5</div>
+          </div>
+          <p>flex-grow:1</p>
+        </div>
+        <div class="twelfth-main2">
+          <div class="twelfth-box2">
+            <div class="twelfth-block2">1</div>
+            <div class="twelfth-block2">2</div>
+            <div class="twelfth-block23">3</div>
+            <div class="twelfth-block2">4</div>
+            <div class="twelfth-block2">5</div>
+          </div>
+          <p>flex-grow:3</p>
+        </div>
+      </div>
+    </div>
+    <div class="thirteenth">
+      <div class="flex13">
+        <div class="thirteen">
+          <p>3</p>
+        </div>
+        <div class="thirteenth-text">
+          <div class="thirteenth-text1"><p>flex-shrink:1;</p></div>
+          <div class="thirteenth-text2"><p>-webkit-flex-shrink:1;</p></div>
+          <div class="thirteenth-text3">
+            <p>
+              Назначение:указывает фактор сужение flex-элемента Возможные
+              значения:0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container13">
+        <div class="thirteenth-main1">
+          <div class="thirteenth-box1">
+            <div class="thirteenth-block1">1</div>
+            <div class="thirteenth-block1">2</div>
+            <div class="thirteenth-block1">3</div>
+            <div class="thirteenth-block1">4</div>
+            <div class="thirteenth-block1">5</div>
+          </div>
+          <p>flex-shrink:1</p>
+        </div>
+        <div class="thirteenth-main2">
+          <div class="thirteenth-box2">
+            <div class="thirteenth-block2">1</div>
+            <div class="thirteenth-block22">2</div>
+            <div class="thirteenth-block2">3</div>
+            <div class="thirteenth-block2">4</div>
+            <div class="thirteenth-block2">5</div>
+          </div>
+          <p>flex-shrink:0</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
